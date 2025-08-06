@@ -95,7 +95,7 @@ def to_excel(df):
 
 # --- Load Model ---
 try:
-    model, label_encoder = joblib.load("svm_pipeline.pkl")
+    model, label_encoder = joblib.load("svm2_pipeline.pkl")
     notify_success("Model berhasil dimuat!")
 except FileNotFoundError:
     notify_error("File 'svm_pipeline.pkl' tidak ditemukan. Pastikan file ada di direktori yang benar.")
